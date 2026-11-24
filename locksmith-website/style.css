@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: white;
+    direction: rtl;
+}
+
+header {
+    background: #080e19;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #d6ad45;
+}
+
+header h1 {
+    color: #d6ad45;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #263b55, #080e19);
+}
+
+.hero h2 {
+    color: #d6ad45;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d6ad45;
+    color: #101827;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    color: #d6ad45;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #1e2d42;
+    color: white;
+    padding: 35px 15px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.card:hover {
+    border: 2px solid #d6ad45;
+}
+
+footer {
+    background: #080e19;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+.details {
+    background: #17263c;
+    margin: 30px 20px;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #d6ad45;
+    text-align: center;
+    line-height: 2;
+}
+
+.details h2 {
+    color: #d6ad45;
+    margin-bottom: 20px;
+}
+
+.details h3 {
+    color: #e6bd5b;
+    margin-top: 20px;
+}
+
+.details p {
+    margin: 10px 0;
+}
+
+.details article {
+    margin: 15px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border: 2px solid #d6ad45;
+}
+/* حركة ظهور الصفحة */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* حركة العنوان */
+@keyframes titleMove {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hero h2 {
+    animation: titleMove 3s infinite;
+}
+
+.hero {
+    animation: fadeIn 1.2s ease;
+}
+
+/* حركة الكروت */
+.card {
+    transition: all 0.4s ease;
+    animation: fadeIn 1s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 10px 30px #d6ad4540;
+}
+
+/* الأزرار */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+    color: #101827;
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #d6ad45;
+}
+
+/* العناوين */
+h2 {
+    transition: 0.4s;
+}
+
+h2:hover {
+    color: white;
+}
+
+/* حركة الروابط */
+nav a {
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d6ad45;
+}
+
+/* تحسين الموبايل */
+@media (max-width: 600px) {
+    .hero {
+        padding: 70px 15px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+}
+
+/* احترام إعداد تقليل الحركة */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+/* ===== GOLDEN LUXURY DESIGN ===== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080b12;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(5, 8, 14, 0.95);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid #c9a33b;
+    box-shadow: 0 5px 25px #0008;
+}
+
+header h1 {
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px #d6ad4560;
+}
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 20% 30%, #554018 0%, transparent 35%),
+        linear-gradient(135deg, #17130a, #080b12 65%);
+    padding: 120px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #e5bd55;
+    animation: goldTitle 3s ease-in-out infinite;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 2;
+}
+
+/* GOLD BUTTON */
+
+.btn {
+    background: linear-gradient(135deg, #ffe08a, #c69a32);
+    color: #111;
+    font-weight: bold;
+    border: 1px solid #ffe08a;
+    box-shadow: 0 0 15px #d6ad4530;
+}
+
+.btn:hover {
+    box-shadow: 0 0 30px #e6bd5b;
+    transform: translateY(-5px);
+}
+
+/* SERVICE CARDS */
+
+.card {
+    background: linear-gradient(145deg, #1b1b1b, #10131b);
+    border: 1px solid #66501f;
+    border-radius: 18px;
+    padding: 35px 20px;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    border-color: #f1c75b;
+    box-shadow: 0 15px 35px #d6ad4530;
+}
+
+.card h3 {
+    color: #e5bd55;
+    margin: 15px 0;
+}
+
+/* GOLD ANIMATIONS */
+
+@keyframes goldTitle {
+    0%, 100% {
+        text-shadow: 0 0 5px #d6ad45;
+    }
+    50% {
+        text-shadow: 0 0 25px #e6bd5b;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.hero h2 {
+    animation: goldTitle 3s infinite;
+}
+
+.hero .btn {
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* SECTION TITLES */
+
+section h2 {
+    color: #e5bd55;
+    margin-bottom: 25px;
+}
+
+/* NAVIGATION */
+
+nav a {
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #e5bd55;
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+
+footer {
+    background: #05070b;
+    border-top: 1px solid #b99135;
+    color: #d8bd78;
+    padding: 30px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 80px 15px;
+    }
+
+    .hero h2 {
+        font-size: 29px;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 14px;
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* ظهور الأقسام عند النزول */
+.reveal {
+    opacity: 0;
+    transform: translateY(45px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* توهج ذهبي */
+.card:hover {
+    box-shadow: 0 0 25px #d6ad4570;
+    transform: translateY(-12px) scale(1.03);
+}
+
+/* حركة الصور */
+.card img {
+    transition: transform 0.6s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+/* WHY US SECTION */
+
+.why-us {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #080b12, #211b0e);
+}
+
+.why-us h2 {
+    color: #e6bd5b;
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.why-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.why-card {
+    background: linear-gradient(145deg, #222, #101010);
+    border: 1px solid #b99135;
+    padding: 35px 15px;
+    border-radius: 18px;
+    transition: 0.5s;
+}
+
+.why-card span {
+    font-size: 40px;
+}
+
+.why-card h3 {
+    color: #e6bd5b;
+    margin: 20px 0;
+}
+
+.why-card p {
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.why-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 30px #d6ad4560;
+    border-color: gold;
+}
+
+@media(max-width: 700px) {
+    .why-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 400px) {
+    .why-container {
+        grid-template-columns: 1fr;
+    }
+}
